@@ -8,9 +8,9 @@ After our scrum meeting we came up with the following tasks:
 
 
 ## Here are screenshots of our meeting
-![screenshot](images/team.jpg)
-![screenshot](images/mockup.jpg)
-![screenshot](images/scrum1.jpg)
+![screenshot](team.jpg)
+![screenshot](mockup.jpg)
+![screenshot](scrum1.jpg)
 
 ## Technologies to be utilized:
 * HTML5 Canvas
