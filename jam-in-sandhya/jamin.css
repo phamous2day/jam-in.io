@@ -1,0 +1,65 @@
+#splash {
+  position: absolute;
+  width: 100%;
+  background: white;
+  background-size: cover;
+  background-position: center center;
+  z-index: 10;
+  opacity: 0;
+  transition: 1s ease;
+}
+#maincanvas{
+  background-image: url(images/background.png);
+}
+
+#pallete {
+    position: absolute;
+    top:40%;
+    margin-top:-170px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    background-color: #EEE;
+    padding:10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 2;
+}
+#info {
+    position: relative;
+    margin-top:25px;
+    vertical-align: middle;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+.swatch {
+    position: static;
+    display: block;
+    border-radius: 5px;
+    float: right;
+    width: 70px;
+    height: 50px;
+    margin-bottom: 10px;
+    clear: both;
+    /*-moz-box-shadow: 3px 3px 5px rgba(150,150,150,0.5);
+    -webkit-box-shadow: 3px 3px 5px rgba(150,150,150,0.5);*/
+    /*box-shadow: 3px 3px 5px rgba(150,150,150,0.5);*/
+}
+.swatch:last-child {
+    margin-bottom: 0px;
+}
+.swatch:hover{
+    cursor:pointer;
+}
+#a.swatch {background-image: url(images/ukulele.png)}
+#b.swatch {background-image: url(images/piano.png)}
+#c.swatch {background-image: url(images/drum.png)}
+#d.swatch {background-image: url(images/flute.png)}
+#e.swatch {background-image: url(images/guitar.png)}
+#f.swatch {background-image: url(images/violin.png)}
+#g.swatch {background-image: url(images/tabla.png)}
+#h.swatch {background-image: url(images/accordion.png)}
+
+.invisible { visibility: hidden; }
+.hidden { visibility: hidden; display: none; }
