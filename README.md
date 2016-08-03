@@ -54,13 +54,14 @@ keyboard.addEventListener('noteOff', function(event) {
 
 
 #### Tutorials
-http://codepen.io/matt-west/full/lAFnx
-http://code.tutsplus.com/tutorials/the-web-audio-api-make-your-own-web-synthesizer--cms-23887
-http://stackoverflow.com/questions/20643687/midi-js-unable-to-change-instruments
+* http://codepen.io/matt-west/full/lAFnx
+* http://code.tutsplus.com/tutorials/the-web-audio-api-make-your-own-web-synthesizer--cms-23887
+* http://www.willvillanueva.com/the-web-audio-api-from-nodeexpress-to-your-browser/
+* http://stackoverflow.com/questions/20643687/midi-js-unable-to-change-instruments
 
 #### Resources (not everything was used)
-https://github.com/alemangui/web-audio-resources
-https://github.com/mudcube/MIDI.js
+* https://github.com/alemangui/web-audio-resources
+* https://github.com/mudcube/MIDI.js
 
 
 
