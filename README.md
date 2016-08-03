@@ -11,7 +11,8 @@ After our scrum meeting we came up with the following tasks:
 * Socket.IO
 * MongoDB
 * Web Audio API
-* 
+
+
 ## Phase 1: Blueprinting
 ![screenshot](team.jpg)
 ![screenshot](mockup.jpg)
