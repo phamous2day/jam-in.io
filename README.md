@@ -19,7 +19,7 @@ After our scrum meeting we came up with the following tasks:
 ![screenshot](scrum1.jpg)
 
 ## Phase 2: Using Socket.IO to emit the sounds
-![screenshot](mvp2.jpg)
+![screenshot](mvp2.png)
 
 ## Obstacles faced
 * Biggest obstacle was figuring out how to emit the sounds to other users. Initially, we thought Socket.IO was capable of emmtting only text since our first experiences with it was to create a chat and draw-together app. We moved made event-listeners to keyboard clicks and emitted those clicks to other users as  way to pass the sound.
@@ -64,6 +64,5 @@ https://github.com/mudcube/MIDI.js
 
 
 
-# Try th live demo!
-((Since it uses Node.js and Socket.IO, used npm now to publish it))
+# Try th live demo! (used NPM now to publish)
 <https://jam-in-ojbugjfigi.now.sh/>
