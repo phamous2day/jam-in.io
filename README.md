@@ -28,7 +28,7 @@ After our scrum meeting we came up with the following tasks:
 * Biggest obstacle was figuring out how to emit the sounds to other users. Initially, we thought Socket.IO was capable of emmtting only text since our first experiences with it was to create a chat and draw-together app. We moved made event-listeners to keyboard clicks and emitted those clicks to other users as  way to pass the sound.
 
 **Here's part of the frontend code that handles the sounds:**
-```
+```js
 keyboard.addEventListener('noteOn', function(event) {
   mouseDown= true;
   keyDown = true;
@@ -41,7 +41,7 @@ keyboard.addEventListener('noteOff', function(event) {
 ```
 
 **Here's part of the backend code that handles the sounds:**
-```
+```js
  io.on('connection', function(socket) {
 
   socket.on('noteOn', function(data){
