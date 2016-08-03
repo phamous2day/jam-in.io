@@ -1,7 +1,7 @@
 # jam-in.io
 A full-stack project for DigitalCrafts utilizing everything we've learned so far. Our team is going to create a sort of "online rockband" where multiple people can visit a chat room and do real-time collaborative jam sessions.
 
-#### Try th live demo! (used NPM now to publish)
+#### Try the live demo! (used NPM now to publish)
 <https://jam-in-ojbugjfigi.now.sh/>
 
 After our scrum meeting we came up with the following tasks:
