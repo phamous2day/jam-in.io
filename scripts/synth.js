@@ -21,6 +21,11 @@ keyboard.keyDown = function (note, frequency) {
   });
 };
 
+
+
+
+
+
 keyboard.keyUp = function(note, frequency) {
   socket.emit('noteOff', {
     note: note,
@@ -32,6 +37,8 @@ socket.on('noteOff', function(data){
   console.log(data);
   noteOff(data.note, data.frequency);
 });
+
+
 
 socket.on('noteOn',  function(data){
   console.log(data);
