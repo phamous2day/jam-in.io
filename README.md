@@ -4,13 +4,10 @@ A full-stack project for DigitalCrafts utilizing everything we've learned so far
 ## Try the live demo! (used NPM now to publish)
 **MVP1**
 <https://jam-in-ojbugjfigi.now.sh/>
+
 **MVP2**
 <https://jam-in-findwlmhka.now.sh/>
 
-After our scrum meeting we came up with the following tasks:
-* Build the HTML5 canvas to hold the keyboard image
-* Find the Web Audio API's that produce the sounds we want
-* Reasearch ways to output the sounds produced in a session to MP3 format when done
 
 ## What's it made of?
 * HTML, CSS, Javascript
@@ -23,14 +20,18 @@ After our scrum meeting we came up with the following tasks:
 ![screenshot](team.jpg)
 ![screenshot](mockup.jpg)
 
+## Obstacles faced in Phase 1
+* We had a lot of ideas and had to prioritize the most important ones to knock out first: making sure the chat and keyboards work independently, then combine them later. We also had to do a lot of research on Web Audio API. With most API's, it's used to connect to databases to get information. With W.A.A. it comes integrated in browsers that support it and produces sound without having to take up so much memory.
+
+#### After our scrum meeting we came up with the following tasks:
+* Build the HTML5 canvas to hold the keyboard image
+* Find the Web Audio API's that produce the sounds we want
+* Reasearch ways to output the sounds produced in a session to MP3 format when done
 
 ## Phase 2: Using Socket.IO to emit the sounds, QWERTY Hancock keybaord integration
 ![screenshot](mvp2.png)
 
-## Phase 3: JS Dynamic Audio Synth integration to produce more instruments, tightened up sound emit functionalties
-![screenshot](mvp3.png)
-
-## Obstacles faced
+## Obstacles faced in Phase 2
 * Biggest obstacle was figuring out how to emit the sounds to other users. Initially, we thought Socket.IO was capable of emmtting only text since our first experiences with it was to create a chat and draw-together app. We moved made event-listeners to keyboard clicks and emitted those clicks to other users as  way to pass the sound.
 
 ###Phase 2 code:
@@ -61,6 +62,11 @@ keyboard.addEventListener('noteOff', function(event) {
     io.emit('noteOff', data);
 ```
 
+## Phase 3: JS Dynamic Audio Synth integration to produce more instruments, tightened up sound emit functionalties
+![screenshot](mvp3.png)
+
+
+
 ## Contributors
 * [Dave](https://github.com/phamous2day): Led scrum meetings, researched technologies necessary, compiled documentation for README.md
 * [Sandhya](https://github.com/ramsandhya): Consolidated the chat and keyboard codes into compact form, restructured final designs and layout
@@ -76,3 +82,4 @@ keyboard.addEventListener('noteOff', function(event) {
 #### Resources (not everything was used)
 * https://github.com/alemangui/web-audio-resources
 * https://github.com/mudcube/MIDI.js
+* https://github.com/keithwhor/audiosynth
