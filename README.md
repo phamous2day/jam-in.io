@@ -12,7 +12,6 @@ After our scrum meeting we came up with the following tasks:
 ## Technologies to be utilized:
 * HTML5 Canvas
 * Socket.IO
-* MongoDB
 * Web Audio API
 
 
