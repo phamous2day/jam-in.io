@@ -1,31 +1,39 @@
 # jam-in.io
 A full-stack project for DigitalCrafts utilizing everything we've learned so far. Our team is going to create a sort of "online rockband" where multiple people can visit a chat room and do real-time collaborative jam sessions.
 
-#### Try the live demo! (used NPM now to publish)
+## Try the live demo! (used NPM now to publish)
+**MVP1**
 <https://jam-in-ojbugjfigi.now.sh/>
+**MVP2**
+<https://jam-in-findwlmhka.now.sh/>
 
 After our scrum meeting we came up with the following tasks:
 * Build the HTML5 canvas to hold the keyboard image
 * Find the Web Audio API's that produce the sounds we want
 * Reasearch ways to output the sounds produced in a session to MP3 format when done
 
-## Technologies to be utilized:
-* HTML5 Canvas
+## What's it made of?
+* HTML, CSS, Javascript
+* Node.js
 * Socket.IO
-* Web Audio API
-
+* [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+  * [Audiosynth](https://github.com/keithwhor/audiosynth)
 
 ## Phase 1: Blueprinting
 ![screenshot](team.jpg)
 ![screenshot](mockup.jpg)
-![screenshot](scrum1.jpg)
 
-## Phase 2: Using Socket.IO to emit the sounds
+
+## Phase 2: Using Socket.IO to emit the sounds, QWERTY Hancock keybaord integration
 ![screenshot](mvp2.png)
+
+## Phase 3: JS Dynamic Audio Synth integration to produce more instruments, tightened up sound emit functionalties
+![screenshot](mvp3.png)
 
 ## Obstacles faced
 * Biggest obstacle was figuring out how to emit the sounds to other users. Initially, we thought Socket.IO was capable of emmtting only text since our first experiences with it was to create a chat and draw-together app. We moved made event-listeners to keyboard clicks and emitted those clicks to other users as  way to pass the sound.
 
+###Phase 2 code:
 **Here's part of the frontend code that handles the sounds:**
 ```js
 keyboard.addEventListener('noteOn', function(event) {
@@ -53,6 +61,10 @@ keyboard.addEventListener('noteOff', function(event) {
     io.emit('noteOff', data);
 ```
 
+## Contributors
+* [Dave](https://github.com/phamous2day): Led scrum meetings, researched technologies necessary, compiled documentation for README.md
+* [Sandhya](https://github.com/ramsandhya): Consolidated the chat and keyboard codes into compact form, restructured final designs and layout
+* [Anthony](https://github.com/Athompsonjr26 ): Problem-solved layout issues, helped gather clues to emitting sounds via Socket.io
 
 
 #### Tutorials
