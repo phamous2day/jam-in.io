@@ -21,7 +21,7 @@ io.on('connection', function(socket) {
 
   //Keyboard sounds and listening to keyboard presses as 'event listeners'
   socket.on('fnPlayNote', function(data){
-    console.log('It is playing music');
+    // console.log('It is playing music');
     io.emit('fnPlayNote',data);
   });
 
