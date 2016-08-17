@@ -9,7 +9,7 @@ A full-stack project for DigitalCrafts utilizing everything we've learned so far
 <https://jam-in-findwlmhka.now.sh/>
 
 **MVP3**
-<jaminmvp3.surge.sh/>
+<http://jaminmvp3.surge.sh/>
 
 
 
